@@ -1,0 +1,99 @@
+prompt 0
+nx 4
+ny 4
+nz 4
+nt 4
+iseed 8352
+
+warms 50
+trajecs 100
+traj_between_meas 1
+beta 0.25
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 100
+traj_between_meas 1
+beta 0.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 100
+traj_between_meas 1
+beta 1.0
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 100
+traj_between_meas 1
+beta 1.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 100
+traj_between_meas 1
+beta 2.0
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 100
+traj_between_meas 1
+beta 2.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 100
+traj_between_meas 1
+beta 3.0
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 100
+traj_between_meas 1
+beta 3.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 100
+traj_between_meas 1
+beta 4.0
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+
+

@@ -1,0 +1,7 @@
+g           2.0
+ntherm      0
+ntraj       100
+traj_length 1
+nstep       5
+seed        112
+naccu       10

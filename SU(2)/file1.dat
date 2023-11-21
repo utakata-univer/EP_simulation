@@ -1,0 +1,101 @@
+	wilson	loop	2.98E-01	1.16E-01	4.02E-02	8.43E-03	8.43E-03		0.001570859
+	wilson	loop	2.99E-01	1.12E-01	5.23E-02	2.80E-02	2.80E-02		0.003548025
+	wilson	loop	2.96E-01	1.15E-01	6.25E-02	3.43E-02	3.43E-02		0.007712992
+	wilson	loop	2.96E-01	1.22E-01	5.22E-02	2.93E-02	2.93E-02		0.016066391
+	wilson	loop	2.98E-01	1.18E-01	4.62E-02	2.44E-02	2.44E-02		
+	wilson	loop	2.96E-01	1.22E-01	3.64E-02	4.47E-02	4.47E-02		
+	wilson	loop	2.97E-01	1.20E-01	4.36E-02	1.73E-02	1.73E-02		
+	wilson	loop	2.98E-01	1.11E-01	4.56E-02	-1.98E-03	-1.98E-03		
+	wilson	loop	2.98E-01	1.21E-01	3.92E-02	3.51E-02	3.51E-02		
+wilson	loop	10	2.97E-01	1.20E-01	4.48E-02	3.58E-02			
+wilson	loop	11	2.96E-01	1.23E-01	2.63E-02	2.93E-02			
+wilson	loop	12	2.97E-01	1.16E-01	4.30E-02	3.79E-02			
+wilson	loop	13	2.97E-01	1.15E-01	4.04E-02	1.85E-02			
+wilson	loop	14	2.99E-01	1.18E-01	3.76E-02	1.46E-02			
+wilson	loop	15	2.98E-01	1.25E-01	4.88E-02	3.71E-02			
+wilson	loop	16	2.99E-01	1.20E-01	6.40E-02	-7.27E-03			
+wilson	loop	17	2.98E-01	1.19E-01	3.85E-02	-8.58E-04			
+wilson	loop	18	2.99E-01	1.16E-01	5.26E-02	1.95E-02			
+wilson	loop	19	2.97E-01	1.19E-01	4.31E-02	1.02E-02			
+wilson	loop	20	2.99E-01	1.19E-01	6.08E-02	7.63E-03			
+wilson	loop	21	2.97E-01	1.16E-01	4.95E-02	5.05E-02			
+wilson	loop	22	2.96E-01	1.11E-01	4.64E-02	-8.33E-03			
+wilson	loop	23	2.98E-01	1.19E-01	3.09E-02	5.53E-02			
+wilson	loop	24	2.97E-01	1.22E-01	3.90E-02	3.14E-02			
+wilson	loop	25	2.99E-01	1.12E-01	3.91E-02	1.83E-02			
+wilson	loop	26	2.98E-01	1.19E-01	4.07E-02	-6.84E-03			
+wilson	loop	27	2.94E-01	1.16E-01	5.19E-02	2.26E-02			
+wilson	loop	28	2.96E-01	1.16E-01	5.97E-02	1.65E-02			
+wilson	loop	29	2.96E-01	1.13E-01	4.61E-02	1.95E-02			
+wilson	loop	30	2.97E-01	1.20E-01	5.30E-02	1.23E-02			
+wilson	loop	31	3.00E-01	1.12E-01	5.25E-02	8.41E-03			
+wilson	loop	32	2.95E-01	1.16E-01	4.68E-02	4.60E-02			
+wilson	loop	33	2.96E-01	1.15E-01	4.49E-02	1.80E-02			
+wilson	loop	34	2.98E-01	1.13E-01	5.10E-02	1.60E-02			
+wilson	loop	35	2.94E-01	1.13E-01	4.91E-02	2.67E-02			
+wilson	loop	36	2.97E-01	1.19E-01	5.78E-02	2.81E-02			
+wilson	loop	37	2.97E-01	1.17E-01	4.79E-02	2.10E-02			
+wilson	loop	38	2.96E-01	1.16E-01	5.37E-02	1.70E-02			
+wilson	loop	39	2.94E-01	1.17E-01	5.68E-02	1.87E-02			
+wilson	loop	40	2.98E-01	1.17E-01	5.20E-02	3.85E-02			
+wilson	loop	41	2.96E-01	1.19E-01	5.82E-02	3.69E-02			
+wilson	loop	42	2.97E-01	1.17E-01	5.99E-02	7.87E-03			
+wilson	loop	43	2.96E-01	1.16E-01	4.90E-02	3.31E-02			
+wilson	loop	44	2.96E-01	1.15E-01	5.83E-02	5.31E-02			
+wilson	loop	45	2.96E-01	1.13E-01	4.40E-02	2.66E-02			
+wilson	loop	46	2.95E-01	1.20E-01	4.87E-02	4.40E-02			
+wilson	loop	47	2.98E-01	1.22E-01	4.62E-02	5.21E-02			
+wilson	loop	48	2.99E-01	1.14E-01	5.71E-02	5.24E-02			
+wilson	loop	49	2.98E-01	1.22E-01	4.44E-02	2.43E-03			
+wilson	loop	50	2.99E-01	1.16E-01	4.73E-02	-2.00E-04			
+wilson	loop	51	2.93E-01	1.06E-01	5.74E-02	8.63E-03			
+wilson	loop	52	2.96E-01	1.19E-01	4.72E-02	2.21E-02			
+wilson	loop	53	2.96E-01	1.15E-01	6.44E-02	2.01E-02			
+wilson	loop	54	2.96E-01	1.09E-01	4.52E-02	4.04E-02			
+wilson	loop	55	2.95E-01	1.12E-01	4.24E-02	2.36E-02			
+wilson	loop	56	2.94E-01	1.17E-01	5.18E-02	4.67E-02			
+wilson	loop	57	2.96E-01	1.15E-01	3.89E-02	4.21E-02			
+wilson	loop	58	2.97E-01	1.20E-01	3.76E-02	2.75E-02			
+wilson	loop	59	2.96E-01	1.19E-01	5.53E-02	5.36E-02			
+wilson	loop	60	2.96E-01	1.18E-01	4.09E-02	8.56E-03			
+wilson	loop	61	2.95E-01	1.10E-01	3.55E-02	1.73E-02			
+wilson	loop	62	2.95E-01	1.14E-01	5.19E-02	3.25E-02			
+wilson	loop	63	2.97E-01	1.22E-01	2.92E-02	1.79E-02			
+wilson	loop	64	2.96E-01	1.15E-01	4.45E-02	-1.20E-02			
+wilson	loop	65	2.96E-01	1.13E-01	5.17E-02	4.42E-03			
+wilson	loop	66	2.97E-01	1.13E-01	5.15E-02	3.47E-02			
+wilson	loop	67	2.97E-01	1.17E-01	5.23E-02	3.59E-02			
+wilson	loop	68	2.97E-01	1.16E-01	5.08E-02	8.51E-03			
+wilson	loop	69	2.98E-01	1.14E-01	4.35E-02	9.82E-03			
+wilson	loop	70	2.95E-01	1.16E-01	4.14E-02	8.27E-03			
+wilson	loop	71	2.97E-01	1.17E-01	4.08E-02	3.62E-02			
+wilson	loop	72	2.98E-01	1.24E-01	4.67E-02	3.53E-02			
+wilson	loop	73	2.94E-01	1.15E-01	4.25E-02	2.61E-02			
+wilson	loop	74	2.99E-01	1.18E-01	5.16E-02	3.75E-02			
+wilson	loop	75	2.95E-01	1.14E-01	4.11E-02	2.03E-02			
+wilson	loop	76	2.95E-01	1.16E-01	4.34E-02	4.30E-02			
+wilson	loop	77	2.99E-01	1.20E-01	5.37E-02	4.92E-02			
+wilson	loop	78	3.00E-01	1.17E-01	3.40E-02	2.94E-02			
+wilson	loop	79	2.95E-01	1.19E-01	4.80E-02	1.03E-02			
+wilson	loop	80	2.97E-01	1.18E-01	5.91E-02	3.39E-02			
+wilson	loop	81	2.97E-01	1.16E-01	4.83E-02	3.45E-02			
+wilson	loop	82	2.96E-01	1.16E-01	5.73E-02	1.03E-02			
+wilson	loop	83	2.98E-01	1.17E-01	3.52E-02	2.65E-02			
+wilson	loop	84	3.00E-01	1.14E-01	4.83E-02	1.06E-02			
+wilson	loop	85	2.98E-01	1.11E-01	5.19E-02	4.92E-02			
+wilson	loop	86	2.98E-01	1.16E-01	5.37E-02	1.19E-03			
+wilson	loop	87	2.95E-01	1.21E-01	5.00E-02	3.06E-02			
+wilson	loop	88	2.98E-01	1.26E-01	5.78E-02	4.80E-02			
+wilson	loop	89	2.97E-01	1.18E-01	4.60E-02	-4.53E-04			
+wilson	loop	90	3.00E-01	1.17E-01	5.11E-02	1.02E-02			
+wilson	loop	91	2.95E-01	1.18E-01	3.64E-02	2.46E-02			
+wilson	loop	92	2.96E-01	1.15E-01	4.59E-02	2.95E-02			
+wilson	loop	93	2.97E-01	1.16E-01	5.34E-02	4.26E-02			
+wilson	loop	94	2.94E-01	1.11E-01	4.88E-02	4.87E-02			
+wilson	loop	95	2.95E-01	1.12E-01	4.75E-02	2.73E-02			
+wilson	loop	96	2.96E-01	1.20E-01	4.75E-02	3.85E-02			
+wilson	loop	97	2.95E-01	1.14E-01	5.19E-02	9.51E-03			
+wilson	loop	98	2.97E-01	1.22E-01	3.85E-02	2.81E-02			
+wilson	loop	99	2.97E-01	1.16E-01	3.36E-02	7.21E-03			
+wilson	loop	10	2.99E-01	1.19E-01	4.60E-02	3.39E-02			
+MEAS	2.97E-01	1.17E-01	4.74E-02	2.46E-02					

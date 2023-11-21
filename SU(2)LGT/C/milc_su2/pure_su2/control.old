@@ -1,0 +1,216 @@
+/* Main procedure for pure gauge SU2 */
+/* MIMD version 4 */
+
+/* We use over-relaxed + heat bath updatings in this code. */
+
+#define CONTROL
+#include <stdio.h>
+#include <math.h>
+#include <complex.h>
+#include <globaldefs.h>
+#include <su2.h>
+#include "lattice.h"    /* global variables for lattice fields */
+#include <comdefs.h>
+
+#define FORALLUPDIR(dir) for(dir=XUP; dir<=TUP; dir++)
+#define FORALLCOLORS(c) for(c=0; c<3; c++)
+
+main(argc,argv)  {
+  complex fft(field_offset A_k, float x[4]);
+  double drand48();
+  su2_matrix U_from_A(float A[]);
+  int readin();
+  int meascount,todo;
+  int prompt;
+  float ssplaq,stplaq,rpbpp,rpbpm;
+  complex plp,ploop();
+  void plaquette(),save_ascii();
+  double dtime;
+  int setup();
+  int i, mu, c;
+  site *s;
+  float x_arb[4] = {0,1,2,3};
+  complex Ax[4][3], wx[3];
+  float Ax_re[4][3], wx_re[3];
+  su2_matrix Gx, A_sigma[4], Ag_sigma[4], tmpmat, tmpmat2[4];
+  short *k, kmu;
+  complex Adw[4][3];
+  float Ag[4][3];
+  int Nlat[4];
+  
+  initialize_machine(argc,argv);
+  g_sync();
+  
+  
+/* set up and loop over input sets */
+  prompt = setup();
+  while( readin(prompt) == 0){
+     dtime = -dclock();
+     
+     
+/* perform warmup trajectories */
+     for(todo=warms; todo > 0; --todo ) update();
+     if(this_node==0)printf("THERMALIZED\n");
+/*========================================================================*/
+     
+
+/* test FFT and fft --------------------------------------------------*/
+/* 
+     FORALLUPDIR(mu)  get_angles(F_OFFSET(link[mu]), F_OFFSET(theta[mu]));
+     FORALLUPDIR(mu) FORALLCOLORS(c)
+       dump_field_at(F_OFFSET(theta[mu][c]),0,
+		   &lattice[node_index((int)x_arb[0],(int)x_arb[1],
+				       (int)x_arb[2],(int)x_arb[3])]); 
+
+     FORALLUPDIR(mu) FFT(F_OFFSET(theta[mu]),F_OFFSET(tmp));
+
+     FORALLUPDIR(mu) FORALLCOLORS(c) 
+       Ax[mu][c] = fft(F_OFFSET(theta[mu][c]), x_arb);
+
+     FORALLUPDIR(mu) FORALLCOLORS(c) {
+       printf("theta[mu=%d][c=%d] = (%f, %f)\n",mu,c,
+	      (Ax[mu][c]).real, (Ax[mu][c]).imag);
+     }
+*/
+/*----------------------------------------------------------------------*/
+
+/* get A_mu(x) [lattice A_mu] */
+     FORALLUPDIR(mu)  get_angles(F_OFFSET(link[mu]), F_OFFSET(theta[mu]));
+ 
+     FORALLUPDIR(mu) FFT(F_OFFSET(theta[mu]),F_OFFSET(tmp));
+     printf("FFT'ed field\n");
+     get_A_from_theta();
+     FORALLUPDIR(mu) for(c=0; c<3; ++c) 
+	   Ax[mu][c] = fft(F_OFFSET(theta[mu][c]), x_arb);
+     printf("fft'ed field at x=(%f,%f,%f,%f)\n",x_arb[0],x_arb[1],x_arb[2],
+	    x_arb[3]);
+/*
+     FORALLUPDIR(mu) FORALLCOLORS(c) {
+       printf("Ax[mu=%d][c=%d] = (%f, %f)\n",mu,c,
+	      (Ax[mu][c]).real, (Ax[mu][c]).imag);
+     }
+*/
+     srand48(12345);
+     randomize_G(1.e-10);
+     gauge_trans();
+
+/* get w(x) and G(x) */
+     get_angles(F_OFFSET(G), F_OFFSET(w));
+     printf("got w(x)\n");
+     FFT(F_OFFSET(w),F_OFFSET(tmp));
+     printf("got w(k)\n");
+     for(c=0; c<3; ++c) 
+	wx[c] = fft(F_OFFSET(w[c]), x_arb);
+/*     FORALLCOLORS(c) {
+       printf("wx[c=%d] = (%f, %f)\n",c, (wx[c]).real, (wx[c]).imag);
+     }
+*/
+     for(c=0; c<3; ++c) wx_re[c] = wx[c].real;
+     Gx = U_from_A(wx_re);
+     printf("got G(x_arb)\n");
+     dump_su2_mat(&Gx);
+
+
+/* construct A + dw */
+     Nlat[0]=nx; Nlat[1]=ny; Nlat[2]=nz; Nlat[3]=4;
+     for(c=0; c<3; ++c)
+        FORALLUPDIR(mu)
+           FORALLSITES(i,s) {
+              k = (short *) &(s->x);
+	      kmu = k[mu];
+	      kmu = kmu > Nlat[mu]/2 ? Nlat[mu]-kmu : kmu;
+              s->theta[mu][c].real -= kmu*(s->w[c]).real;
+              s->theta[mu][c].imag -= kmu*(s->w[c]).imag;
+           }
+
+
+/* get A + dw at x */
+     FORALLUPDIR(mu) for(c=0; c<3; ++c)
+       Adw[mu][c] = fft(F_OFFSET(theta[mu][c]), x_arb);
+     FORALLUPDIR(mu) for(c=0; c<3; ++c) {
+       printf("Adw[mu=%d][c=%d] = (%f, %f)\n",mu,c,
+	                        (Adw[mu][c]).real, (Adw[mu][c]).imag);
+     }
+
+/* load A_sigma = (A + dw).sigma, and gauge trans */
+     FORALLUPDIR(mu) 
+	A_sigma[mu] = make_su2_matrix(0.,
+		       (Adw[mu][0]).real,(Adw[mu][1]).real,(Adw[mu][2]).real);
+
+printf("loaded A_sigma: \n");
+FORALLUPDIR(mu) dump_su2_mat(&A_sigma[mu]);
+printf("Gx: ");
+dump_su2_mat(&Gx);
+
+     FORALLUPDIR(mu) { 
+	mult_su2_an(&Gx, &A_sigma[mu], &tmpmat);
+	mult_su2_nn(&tmpmat, &Gx, &Ag_sigma[mu]);
+      }
+
+printf("rotated A_sigma: \n");
+
+/* get Ag and print */
+     FORALLUPDIR(mu) for(c=0; c<3; ++c) {
+       Ag[mu][c] = (Ag_sigma[mu]).e[c+1];
+       printf("Ag_cont[mu=%d][c=%d] = %f\n",mu,c, Ag[mu][c]);
+     }
+
+printf("\n");
+
+/* get Ag_mu(x) from lattice  */
+     FORALLUPDIR(mu)  get_angles(F_OFFSET(link[mu]), F_OFFSET(theta[mu]));
+     FORALLUPDIR(mu)  FFT(F_OFFSET(theta[mu]),F_OFFSET(tmp));
+     get_A_from_theta();
+     FORALLUPDIR(mu) {
+       Ax[mu][c] = fft(F_OFFSET(theta[mu]), x_arb);
+       for(c=0; c<3; ++c) 
+	  printf("Ag_lat[mu=%d][c=%d] = %f\n",mu,c,(Ax[mu][c]).real);
+     }
+
+
+
+
+
+
+
+
+/*========================================================================*/
+/* write lattice if requested (this should go into the user interface code */
+     fflush(stdout);
+     dtime += dclock();
+     if(this_node==0)printf("COMPLETED in %e seconds\n",dtime);
+     }
+     fflush(stdout);
+     dtime = -dclock();
+
+     /* save lattice if requested */
+     if( saveflag == SAVE_ASCII){
+       save_ascii(savefile,beta,0.0);
+       dtime += dclock();
+       if(this_node==0){
+	 printf("Time for saving lattice = %e seconds\n",dtime);
+       }
+       fflush(stdout);
+     }
+     if( saveflag == SAVE_BINARY){
+       save_binary(savefile,beta,0.0);
+       dtime += dclock();
+       if(this_node==0){
+	 printf("Time for saving lattice = %e seconds\n",dtime);
+       }
+       fflush(stdout);
+     }
+}
+
+
+
+
+
+/* 
+   printf("link angles at (0,1,2,3):\n");
+   FORALLUPDIR(mu)
+      dump_field_at(F_OFFSET(theta[mu]),1,&lattice[node_index(0,1,2,3)]); 
+
+
+
+*/

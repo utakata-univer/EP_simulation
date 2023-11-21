@@ -1,0 +1,90 @@
+#
+#  Program qcdf90, makefile, version 4.0.0
+#
+#  Copyright by Indranil Dasgupta, Andrea R. Levi, Vittorio Lubicz
+#  and Claudio Rebbi  -  Boston University  -  January 1996
+#  This program may be freely copied and used as long as this notice
+#  is retained.
+#
+# su2 version  2006.08.28 by y.k.
+#
+.KEEP_STATE:	
+.SUFFIXES: .o .f90
+
+FLAGS =
+
+#FL_O = 
+#FL_O = -qsave=all -qarch=g5 -O
+#FL_O =  -qarch=g5 -O
+
+
+M_SOURCES = precisions.o \
+            constants.o \
+            global_module.o \
+            field_algebra.o \
+            generator_algebra.o \
+            conditionals.o \
+            shift.o \
+            random_numbers.o \
+            assign_mixed.o \
+            assign_isotype1.o \
+            assign_isotype2.o \
+            assign_isotype3.o \
+            dirac.o 
+
+S_SOURCES = write_read_conf.o
+
+
+.f90.o:
+	f90 $(FLAGS) $(FL_O) -c $<
+
+
+precisions.o: makefile
+
+constants.o: precisions.o
+
+global_module.o: constants.o
+
+field_algebra.o: global_module.o
+
+generator_algebra.o: global_module.o
+
+conditionals.o: global_module.o
+
+shift.o: global_module.o
+
+random_numbers.o: global_module.o
+
+assign_mixed.o: global_module.o
+
+sutwo.o: global_module.o
+
+assign_isotype1.o: global_module.o
+
+assign_isotype2.o: global_module.o
+
+assign_isotype3.o: global_module.o
+
+dirac.o: global_module.o assign_isotype2.o
+
+$(S_SOURCES): $(M_SOURCES)
+
+quenched.o: $(M_SOURCES)
+
+propagator.o: $(M_SOURCES)
+
+heatbath.o:  $(M_SOURCES)
+
+quenched: $(M_SOURCES) $(S_SOURCES) quenched.o
+	f90 $(FLAGS) $(FL_O) -o quenched $(M_SOURCES) $(S_SOURCES) quenched.o
+
+propagator: $(M_SOURCES) $(S_SOURCES) propagator.o
+	f90 $(FLAGS) $(FL_O) -o propagator $(M_SOURCES) $(S_SOURCES) propagator.o
+
+heatbath: $(M_SOURCES) $(S_SOURCES) heatbath.o
+	f90 $(FLAGS) $(FL_O) -o heatbath $(M_SOURCES) $(S_SOURCES) heatbath.o
+
+
+.PHONY: clean
+clean: 
+	-rm *.o *.mod

@@ -1,0 +1,423 @@
+Pure gauge SU2
+Overrelaxed/quasi-heat bath algorithm
+type 0 for no prompts, 1 for prompts or 2 for list of prompts
+lattice dimensions = 4 4 4 4
+random number seed = 8352
+LAYOUT = Hypercubes, options = EVENFIRST,
+
+
+warms = 50 trajecs = 100
+no. of traj. between prop. meas. = 1
+plaq. beta = 2.000000
+number of microcanonical steps per trajectory = 0
+number of qhb steps per trajectory = 1
+NOT fixing the gauge
+new lattice loaded
+Time for getting lattice = 0.000000e+00 seconds
+START 2.000000e+00 2.000000e+00
+monte_space: accept = 235, reject = 533
+monte_time: accept = 243, reject = 13
+monte_space: accept = 252, reject = 516
+monte_time: accept = 231, reject = 25
+monte_space: accept = 295, reject = 473
+monte_time: accept = 234, reject = 22
+monte_space: accept = 306, reject = 462
+monte_time: accept = 226, reject = 30
+monte_space: accept = 353, reject = 415
+monte_time: accept = 212, reject = 44
+monte_space: accept = 325, reject = 443
+monte_time: accept = 225, reject = 31
+monte_space: accept = 349, reject = 419
+monte_time: accept = 212, reject = 44
+monte_space: accept = 358, reject = 410
+monte_time: accept = 229, reject = 27
+monte_space: accept = 357, reject = 411
+monte_time: accept = 223, reject = 33
+monte_space: accept = 374, reject = 394
+monte_time: accept = 221, reject = 35
+monte_space: accept = 361, reject = 407
+monte_time: accept = 230, reject = 26
+monte_space: accept = 338, reject = 430
+monte_time: accept = 220, reject = 36
+monte_space: accept = 349, reject = 419
+monte_time: accept = 224, reject = 32
+monte_space: accept = 366, reject = 402
+monte_time: accept = 217, reject = 39
+monte_space: accept = 368, reject = 400
+monte_time: accept = 216, reject = 40
+monte_space: accept = 378, reject = 390
+monte_time: accept = 223, reject = 33
+monte_space: accept = 376, reject = 392
+monte_time: accept = 222, reject = 34
+monte_space: accept = 394, reject = 374
+monte_time: accept = 227, reject = 29
+monte_space: accept = 368, reject = 400
+monte_time: accept = 228, reject = 28
+monte_space: accept = 376, reject = 392
+monte_time: accept = 227, reject = 29
+monte_space: accept = 394, reject = 374
+monte_time: accept = 227, reject = 29
+monte_space: accept = 375, reject = 393
+monte_time: accept = 226, reject = 30
+monte_space: accept = 389, reject = 379
+monte_time: accept = 228, reject = 28
+monte_space: accept = 401, reject = 367
+monte_time: accept = 229, reject = 27
+monte_space: accept = 369, reject = 399
+monte_time: accept = 221, reject = 35
+monte_space: accept = 383, reject = 385
+monte_time: accept = 229, reject = 27
+monte_space: accept = 375, reject = 393
+monte_time: accept = 224, reject = 32
+monte_space: accept = 375, reject = 393
+monte_time: accept = 221, reject = 35
+monte_space: accept = 392, reject = 376
+monte_time: accept = 225, reject = 31
+monte_space: accept = 387, reject = 381
+monte_time: accept = 214, reject = 42
+monte_space: accept = 410, reject = 358
+monte_time: accept = 221, reject = 35
+monte_space: accept = 404, reject = 364
+monte_time: accept = 218, reject = 38
+monte_space: accept = 380, reject = 388
+monte_time: accept = 227, reject = 29
+monte_space: accept = 378, reject = 390
+monte_time: accept = 222, reject = 34
+monte_space: accept = 395, reject = 373
+monte_time: accept = 222, reject = 34
+monte_space: accept = 374, reject = 394
+monte_time: accept = 231, reject = 25
+monte_space: accept = 390, reject = 378
+monte_time: accept = 226, reject = 30
+monte_space: accept = 413, reject = 355
+monte_time: accept = 220, reject = 36
+monte_space: accept = 397, reject = 371
+monte_time: accept = 224, reject = 32
+monte_space: accept = 385, reject = 383
+monte_time: accept = 228, reject = 28
+monte_space: accept = 372, reject = 396
+monte_time: accept = 221, reject = 35
+monte_space: accept = 405, reject = 363
+monte_time: accept = 221, reject = 35
+monte_space: accept = 354, reject = 414
+monte_time: accept = 227, reject = 29
+monte_space: accept = 404, reject = 364
+monte_time: accept = 226, reject = 30
+monte_space: accept = 409, reject = 359
+monte_time: accept = 223, reject = 33
+monte_space: accept = 411, reject = 357
+monte_time: accept = 224, reject = 32
+monte_space: accept = 417, reject = 351
+monte_time: accept = 228, reject = 28
+monte_space: accept = 379, reject = 389
+monte_time: accept = 229, reject = 27
+monte_space: accept = 397, reject = 371
+monte_time: accept = 216, reject = 40
+monte_space: accept = 405, reject = 363
+monte_time: accept = 220, reject = 36
+THERMALIZATION COMPLETED
+monte_space: accept = 397, reject = 371
+monte_time: accept = 216, reject = 40
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.078005e+00 1.125557e+00
+monte_space: accept = 436, reject = 332
+monte_time: accept = 222, reject = 34
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.064643e+00 1.146214e+00
+monte_space: accept = 408, reject = 360
+monte_time: accept = 232, reject = 24
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.075429e+00 1.160156e+00
+monte_space: accept = 397, reject = 371
+monte_time: accept = 218, reject = 38
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.096366e+00 1.171269e+00
+monte_space: accept = 387, reject = 381
+monte_time: accept = 228, reject = 28
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.107407e+00 1.156591e+00
+monte_space: accept = 370, reject = 398
+monte_time: accept = 223, reject = 33
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.104869e+00 1.148842e+00
+monte_space: accept = 410, reject = 358
+monte_time: accept = 220, reject = 36
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.113500e+00 1.127250e+00
+monte_space: accept = 373, reject = 395
+monte_time: accept = 228, reject = 28
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.078209e+00 1.133681e+00
+monte_space: accept = 401, reject = 367
+monte_time: accept = 225, reject = 31
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.084133e+00 1.152128e+00
+monte_space: accept = 379, reject = 389
+monte_time: accept = 225, reject = 31
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.092214e+00 1.132013e+00
+monte_space: accept = 391, reject = 377
+monte_time: accept = 222, reject = 34
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.075170e+00 1.167864e+00
+monte_space: accept = 380, reject = 388
+monte_time: accept = 226, reject = 30
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.082917e+00 1.146241e+00
+monte_space: accept = 436, reject = 332
+monte_time: accept = 215, reject = 41
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.086422e+00 1.128763e+00
+monte_space: accept = 412, reject = 356
+monte_time: accept = 227, reject = 29
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.094268e+00 1.126097e+00
+monte_space: accept = 403, reject = 365
+monte_time: accept = 234, reject = 22
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.076180e+00 1.116084e+00
+monte_space: accept = 392, reject = 376
+monte_time: accept = 223, reject = 33
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.051761e+00 1.115985e+00
+monte_space: accept = 404, reject = 364
+monte_time: accept = 221, reject = 35
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.054361e+00 1.143354e+00
+monte_space: accept = 411, reject = 357
+monte_time: accept = 220, reject = 36
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.052324e+00 1.155279e+00
+monte_space: accept = 390, reject = 378
+monte_time: accept = 225, reject = 31
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.050316e+00 1.180148e+00
+monte_space: accept = 387, reject = 381
+monte_time: accept = 234, reject = 22
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.052654e+00 1.172266e+00
+monte_space: accept = 396, reject = 372
+monte_time: accept = 229, reject = 27
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.033185e+00 1.160692e+00
+monte_space: accept = 432, reject = 336
+monte_time: accept = 234, reject = 22
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.034821e+00 1.146593e+00
+monte_space: accept = 401, reject = 367
+monte_time: accept = 230, reject = 26
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.056546e+00 1.158237e+00
+monte_space: accept = 402, reject = 366
+monte_time: accept = 227, reject = 29
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.101699e+00 1.145265e+00
+monte_space: accept = 397, reject = 371
+monte_time: accept = 228, reject = 28
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.082507e+00 1.145117e+00
+monte_space: accept = 403, reject = 365
+monte_time: accept = 219, reject = 37
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.106359e+00 1.141179e+00
+monte_space: accept = 387, reject = 381
+monte_time: accept = 224, reject = 32
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.094678e+00 1.147305e+00
+monte_space: accept = 391, reject = 377
+monte_time: accept = 213, reject = 43
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.088709e+00 1.141983e+00
+monte_space: accept = 406, reject = 362
+monte_time: accept = 217, reject = 39
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.066504e+00 1.121592e+00
+monte_space: accept = 393, reject = 375
+monte_time: accept = 222, reject = 34
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.036680e+00 1.118424e+00
+monte_space: accept = 407, reject = 361
+monte_time: accept = 228, reject = 28
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.041886e+00 1.122353e+00
+monte_space: accept = 396, reject = 372
+monte_time: accept = 225, reject = 31
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.051180e+00 1.139105e+00
+monte_space: accept = 407, reject = 361
+monte_time: accept = 230, reject = 26
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.035302e+00 1.109739e+00
+monte_space: accept = 405, reject = 363
+monte_time: accept = 216, reject = 40
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.057753e+00 1.126638e+00
+monte_space: accept = 391, reject = 377
+monte_time: accept = 226, reject = 30
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.065724e+00 1.128924e+00
+monte_space: accept = 401, reject = 367
+monte_time: accept = 229, reject = 27
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.090607e+00 1.133721e+00
+monte_space: accept = 416, reject = 352
+monte_time: accept = 223, reject = 33
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.086362e+00 1.143238e+00
+monte_space: accept = 406, reject = 362
+monte_time: accept = 221, reject = 35
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.088737e+00 1.134598e+00
+monte_space: accept = 407, reject = 361
+monte_time: accept = 228, reject = 28
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.115051e+00 1.153596e+00
+monte_space: accept = 388, reject = 380
+monte_time: accept = 221, reject = 35
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.086408e+00 1.145439e+00
+monte_space: accept = 397, reject = 371
+monte_time: accept = 222, reject = 34
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.092203e+00 1.116549e+00
+monte_space: accept = 405, reject = 363
+monte_time: accept = 211, reject = 45
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.045868e+00 1.112156e+00
+monte_space: accept = 408, reject = 360
+monte_time: accept = 228, reject = 28
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.026794e+00 1.101388e+00
+monte_space: accept = 421, reject = 347
+monte_time: accept = 229, reject = 27
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.058820e+00 1.087494e+00
+monte_space: accept = 411, reject = 357
+monte_time: accept = 219, reject = 37
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.072718e+00 1.080134e+00
+monte_space: accept = 399, reject = 369
+monte_time: accept = 231, reject = 25
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.074557e+00 1.080034e+00
+monte_space: accept = 409, reject = 359
+monte_time: accept = 225, reject = 31
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.062427e+00 1.091332e+00
+monte_space: accept = 389, reject = 379
+monte_time: accept = 213, reject = 43
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.069290e+00 1.081169e+00
+monte_space: accept = 388, reject = 380
+monte_time: accept = 226, reject = 30
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.067204e+00 1.112495e+00
+monte_space: accept = 391, reject = 377
+monte_time: accept = 219, reject = 37
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.084026e+00 1.085877e+00
+monte_space: accept = 389, reject = 379
+monte_time: accept = 229, reject = 27
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.095175e+00 1.106468e+00
+monte_space: accept = 389, reject = 379
+monte_time: accept = 232, reject = 24
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.101596e+00 1.113110e+00
+monte_space: accept = 404, reject = 364
+monte_time: accept = 221, reject = 35
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.121195e+00 1.139550e+00
+monte_space: accept = 402, reject = 366
+monte_time: accept = 225, reject = 31
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.098040e+00 1.117465e+00
+monte_space: accept = 406, reject = 362
+monte_time: accept = 227, reject = 29
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.102677e+00 1.126311e+00
+monte_space: accept = 390, reject = 378
+monte_time: accept = 234, reject = 22
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.116142e+00 1.120844e+00
+monte_space: accept = 382, reject = 386
+monte_time: accept = 222, reject = 34
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.135268e+00 1.132411e+00
+monte_space: accept = 409, reject = 359
+monte_time: accept = 225, reject = 31
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.105716e+00 1.133027e+00
+monte_space: accept = 428, reject = 340
+monte_time: accept = 226, reject = 30
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.118562e+00 1.133620e+00
+monte_space: accept = 367, reject = 401
+monte_time: accept = 229, reject = 27
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.128219e+00 1.127612e+00
+monte_space: accept = 411, reject = 357
+monte_time: accept = 222, reject = 34
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.141735e+00 1.145145e+00
+monte_space: accept = 404, reject = 364
+monte_time: accept = 226, reject = 30
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.115972e+00 1.139084e+00
+monte_space: accept = 415, reject = 353
+monte_time: accept = 218, reject = 38
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.132680e+00 1.120547e+00
+monte_space: accept = 431, reject = 337
+monte_time: accept = 221, reject = 35
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.132819e+00 1.108338e+00
+monte_space: accept = 403, reject = 365
+monte_time: accept = 218, reject = 38
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.144056e+00 1.116191e+00
+monte_space: accept = 401, reject = 367
+monte_time: accept = 227, reject = 29
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.135077e+00 1.127968e+00
+monte_space: accept = 410, reject = 358
+monte_time: accept = 230, reject = 26
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.109101e+00 1.110698e+00
+monte_space: accept = 421, reject = 347
+monte_time: accept = 217, reject = 39
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.108448e+00 1.091884e+00
+monte_space: accept = 401, reject = 367
+monte_time: accept = 226, reject = 30
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.075965e+00 1.083752e+00
+monte_space: accept = 388, reject = 380
+monte_time: accept = 228, reject = 28
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.056723e+00 1.093191e+00
+monte_space: accept = 383, reject = 385
+monte_time: accept = 223, reject = 33
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.044093e+00 1.067542e+00
+monte_space: accept = 399, reject = 369
+monte_time: accept = 214, reject = 42
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.062260e+00 1.059208e+00
+monte_space: accept = 420, reject = 348
+monte_time: accept = 228, reject = 28
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.040619e+00 1.063263e+00
+monte_space: accept = 415, reject = 353
+monte_time: accept = 221, reject = 35
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.066167e+00 1.063147e+00
+monte_space: accept = 421, reject = 347
+monte_time: accept = 218, reject = 38
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.070215e+00 1.054006e+00
+monte_space: accept = 410, reject = 358
+monte_time: accept = 227, reject = 29
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.036798e+00 1.063640e+00
+monte_space: accept = 396, reject = 372
+monte_time: accept = 233, reject = 23
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.074782e+00 1.084879e+00
+monte_space: accept = 434, reject = 334
+monte_time: accept = 228, reject = 28
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.059924e+00 1.075370e+00
+monte_space: accept = 427, reject = 341
+monte_time: accept = 230, reject = 26
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.044396e+00 1.080332e+00
+monte_space: accept = 407, reject = 361
+monte_time: accept = 223, reject = 33
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.059286e+00 1.089726e+00
+monte_space: accept = 383, reject = 385
+monte_time: accept = 224, reject = 32
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.057524e+00 1.104217e+00
+monte_space: accept = 405, reject = 363
+monte_time: accept = 230, reject = 26
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.071121e+00 1.083007e+00
+monte_space: accept = 403, reject = 365
+monte_time: accept = 221, reject = 35
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.095016e+00 1.085812e+00
+monte_space: accept = 395, reject = 373
+monte_time: accept = 221, reject = 35
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.114629e+00 1.093241e+00
+monte_space: accept = 414, reject = 354
+monte_time: accept = 227, reject = 29
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.079159e+00 1.119411e+00
+monte_space: accept = 413, reject = 355
+monte_time: accept = 229, reject = 27
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.111348e+00 1.103154e+00
+monte_space: accept = 417, reject = 351
+monte_time: accept = 233, reject = 23
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.144864e+00 1.116434e+00
+monte_space: accept = 405, reject = 363
+monte_time: accept = 218, reject = 38
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.134159e+00 1.134667e+00
+monte_space: accept = 372, reject = 396
+monte_time: accept = 222, reject = 34
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.101277e+00 1.117173e+00
+monte_space: accept = 398, reject = 370
+monte_time: accept = 230, reject = 26
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.083145e+00 1.109527e+00
+monte_space: accept = 402, reject = 366
+monte_time: accept = 229, reject = 27
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.087170e+00 1.123046e+00
+monte_space: accept = 394, reject = 374
+monte_time: accept = 226, reject = 30
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.068510e+00 1.136710e+00
+monte_space: accept = 421, reject = 347
+monte_time: accept = 230, reject = 26
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.078798e+00 1.131344e+00
+monte_space: accept = 409, reject = 359
+monte_time: accept = 223, reject = 33
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.082550e+00 1.099918e+00
+monte_space: accept = 393, reject = 375
+monte_time: accept = 227, reject = 29
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.084960e+00 1.094087e+00
+monte_space: accept = 412, reject = 356
+monte_time: accept = 228, reject = 28
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.062035e+00 1.104449e+00
+monte_space: accept = 406, reject = 362
+monte_time: accept = 226, reject = 30
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.081981e+00 1.073465e+00
+monte_space: accept = 420, reject = 348
+monte_time: accept = 225, reject = 31
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.062640e+00 1.040517e+00
+monte_space: accept = 411, reject = 357
+monte_time: accept = 214, reject = 42
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.027861e+00 1.052481e+00
+monte_space: accept = 406, reject = 362
+monte_time: accept = 219, reject = 37
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.017747e+00 1.047973e+00
+RUNNING COMPLETED
+Time = 2.823220e+01 seconds
+
+
+Termination: status = 0

@@ -1,0 +1,120 @@
+#  Makefile for the hybrid molecular dynamics simulation with
+#  pure gauge SU3
+#  MIMD version 3
+#
+#	"make su3_rmd" used the refreshed molecular dynamics algorithm
+#	"make su3_hmc" uses hybrid Metropolis Carlo algorithm.
+#	"make su3_ora" uses overrelaxed/quasi heat bath algorithm.
+#	"make su3_oraf" uses overrelaxed/quasi heat bath algorithm 
+#		and adds the possibility of gauge fixing (currently
+#		in Coulomb gauge only)
+#
+
+#c code
+LIBDIR = ../libsu2
+
+#Libraries for complex numbers and su2 functions
+QCDLIB = $(LIBDIR)/complex.a $(LIBDIR)/su2.a
+
+INCLUDES= $(LIBDIR)/complex.h $(LIBDIR)/su2.h $(LIBDIR)/globaldefs.h \
+../generic_su2/comdefs.h lattice.h
+
+# include file defining site structure, etc., for compiling generic code */
+LATDEF =  -DLATDEF='"../pure_su2/lattice.h"'
+# The quotation marks are necessary, as is the "../pure_gauge", since
+# some compilations will be done in another directory
+
+# Choose one of the lattice layout algorithms:
+LAYOUT = layout_hyper
+
+# Allow various files for control.c: (do CONTROL=source  on make line)
+CONTROL = control
+
+OBJECTS= $(CONTROL).o setup.o ranstuff.o ploop3.o \
+$(LAYOUT).o io_lat.o plaquette3.o check_unitarity.o \
+reunitarize.o update_ora.o  dsdu_qhb.o relax.o metropolis.o gaussrand.o
+
+#MACHINE_DEP = com_intelsim.o 
+#MACHINE_DEP = com_intel.o
+MACHINE_DEP = com_vanilla.o 
+
+#Library for multinode communication and information functions
+#ILIB= /usr/local/lib/intel/bsimlib.a		#Sarek.physics.ucsb.edu
+#ILIB = /u/detar/cube/bsimlib.a    #cosmic.physics.utah.edu
+#ILIB= /usr/local/lib/Intel/bsimlib.a #aurinko
+#ILIB= /home/haggis1/degrand/Intel/Emulator/bsimlib.a #haggis
+#ILIB= /usr/local/lib/bsimlib.a		#preon.physics.arizona.edu
+#ILIB= -node		#Intel machine
+ILIB=                #vanilla
+
+
+#CFLAGS= -g -f -I$(LIBDIR) -DPROTO	#MIPS
+#CFLAGS= -g -fsingle -I$(LIBDIR) 	#Sun
+CFLAGS= -O -g -DPROTO -I$(LIBDIR) $(LATDEF)        #gnu c compiler
+
+#COMPILER = cc	#generic, for simulator
+COMPILER = gcc	#Intel Green Hills compiler (SDSC only)
+
+
+.c.o: ; $(COMPILER) $(CFLAGS) -c  $(DEFINES) $*.c 
+
+
+$(OBJECTS) $(EXTRA_OBJECTS) : $(INCLUDES)
+
+
+
+##### Targets:
+fft::
+	make -f Make_vanilla target "TARGET= fft"
+
+su2::
+	make -f Make_vanilla target "TARGET= su2" \
+	"DEFINES= -DORA_ALGORITHM" "EXTRA_OBJECTS= "
+
+su2_dense::
+	make -f Make_vanilla target "TARGET= su2_dense" \
+	"DEFINES= -DORA_ALGORITHM" \
+	"EXTRA_OBJECTS= metropolis_dense.o relax_space.o update_dense.o"
+
+extrapolate::
+	make -f Make_vanilla target "TARGET= extrapolate" \
+	"DEFINES= -DORA_ALGORITHM" \
+	"EXTRA_OBJECTS= extrapolate.o"
+
+clean:
+	rm -f *.o
+
+
+
+##### Objects:
+
+# Lattice layout algorithms:
+$(LAYOUT).o: ../generic_su2/$(LAYOUT).c $(INCLUDES)
+	$(COMPILER) $(CFLAGS) -c $(LATDEF) $(DEFINES) ../generic_su2/$(LAYOUT).c 
+#	mv ../generic_su2/$(LAYOUT).o layout.o
+com_intelsim.o: ../generic_su2/com_intelsim.c $(INCLUDES)
+	$(COMPILER) $(CFLAGS) -c $(LATDEF) $(DEFINES) com_intelsim.c 
+com_intel.o: ../generic_su2/com_intel.c $(INCLUDES)
+	$(COMPILER) $(CFLAGS) -c $(LATDEF) $(DEFINES) com_intel.c 
+com_ncube.o: ../generic_su2/com_ncube.c $(INCLUDES)
+	$(COMPILER) $(CFLAGS) -c $(LATDEF) $(DEFINES) com_ncube.c 
+com_vanilla.o: ../generic_su2/com_vanilla.c $(INCLUDES)
+	$(COMPILER) $(CFLAGS) -c $(LATDEF) $(DEFINES) ../generic_su2/com_vanilla.c 
+ranstuff.o: ../generic_su2/ranstuff.c $(INCLUDES)
+	$(COMPILER) $(CFLAGS) -c $(LATDEF) $(DEFINES) ../generic_su2/ranstuff.c 
+gaussrand.o: ../generic_su2/gaussrand.c $(INCLUDES)  
+	$(COMPILER) $(CFLAGS) -c $(LATDEF) $(DEFINES) ../generic_su2/gaussrand.c
+ploop3.o: ../generic_su2/ploop3.c $(INCLUDES)
+	$(COMPILER) $(CFLAGS) -c $(LATDEF) $(DEFINES) ../generic_su2/ploop3.c 
+plaquette3.o: ../generic_su2/plaquette3.c $(INCLUDES)
+	$(COMPILER) $(CFLAGS) -c $(LATDEF) $(DEFINES) ../generic_su2/plaquette3.c 
+io_lat.o: ../generic_su2/io_lat.c $(INCLUDES)
+	$(COMPILER) $(CFLAGS) -c $(LATDEF) $(DEFINES) ../generic_su2/io_lat.c 
+io_lat_par2.o: ../generic_su2/io_lat_par2.c $(INCLUDES)
+	$(COMPILER) $(CFLAGS) -c $(LATDEF) $(DEFINES) ../generic_su2/io_lat_par2.c 
+
+
+target: $(OBJECTS) $(MACHINE_DEP) $(EXTRA_OBJECTS) $(QCDLIB)
+	$(COMPILER) $(CFLAGS) -o $(TARGET) $(DEFINES) \
+	 $(OBJECTS) $(MACHINE_DEP) $(EXTRA_OBJECTS) $(QCDLIB) $(ILIB) -lm
+

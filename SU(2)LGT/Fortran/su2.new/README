@@ -1,0 +1,56 @@
+SU(2) Monte Carlo Simulation (fortran code)
+
+How to use
+
+lattice parameter は、parameter.f の中で設定する。
+
+------------------------------------------------------------------
+      integer ns,nx,ny,nz,nt
+      parameter  (ns=8)
+      parameter  (nx=ns, ny=ns, nz=ns, nt=8)
+
+        ...
+      
+------------------------------------------------------------------
+
+simulation parameter は、submit の中で設定して、標準入力から
+実行ファイルに渡す。
+
+------------------------------------------------------------------
+#!/bin/sh 
+
+TG=test_su2
+OBJ=$TG.out
+WD=$TG
+DIR_DATA=8x8a                       <---- data をおく directory
+
+if test ! -d $WD
+then
+	mkdir $WD
+fi
+
+cp $OBJ $WD
+
+cd $WD
+mkdir $DIR_DATA
+
+nice -20 $OBJ << EOF
+2.3d0 5                               <---- beta, number of hit
+1 11837415 50                         <---- initial condition,
+                                            initial random number
+                                            number of iteration
+EOF
+
+rm $OBJ
+
+mv data.$TG $DIR_DATA
+
+exit 0
+------------------------------------------------------------------
+
+eken#で、make とタイプすれば、compile する。
+submit とタイプすると、実行し、標準出力にplaquetの値が現れる。
+(この値は、まだ、平均値を取っていないでの注意。)
+
+
+

@@ -1,0 +1,48 @@
+# Makefile for Libraries for QCD programs
+#
+# Vanilla version, for workstations
+
+#CFLAGS =  -O -fsingle -DFAST		#Sun 3
+#CFLAGS =  -O4 -fsingle -DFAST 		#Sun 4
+CFLAGS =  -O  -DFAST			#gnu c compiler
+#CFLAGS = -O -f -DFAST -DPROTO		#Mips
+
+COMPILER = cc	#most
+#COMPILER = gcc #gnu c compiler
+.c.o:
+	$(COMPILER) $(CFLAGS) -c $*.c
+
+all: complex.a su2.a
+
+SU2OBJS = addmat.o addvec.o cmp_ahmat.o cs_m_a_vec.o cs_m_a_mat.o \
+	cs_m_s_vec.o \
+	cs_m_vec.o det_su2.o dumpmat.o dumpvec.o \
+	m_amatvec_s.o m_amatvec.o m_amatvec_ns.o m_mat_an.o m_mat_aa.o \
+	m_mat_na.o m_mat_nn.o m_mat_choose.o m_matvec.o m_matvec_ns.o \ 
+	m_matvec_s.o \
+	make_ahmat.o rand_ahmat.o realtr.o \
+	s_m_a_mat.o s_m_a_vec.o s_m_s_mat.o s_m_s_vec.o s_m_sum_vec.o \
+	s_m_vec.o \
+	su2_adjoint.o su2_dot.o su2_rdot.o su2_anti_proj.o su2mat_copy.o \
+	su2vec_copy.o make_su2_mat.o \
+	submat.o subvec.o trace_su2.o reunit_su2.o \
+	msq_su2vec.o sub4vecs.o m_amv_4dir.o m_mv_s_4dir.o
+
+WILSON_OBJS = wp_shrink.o wp_grow.o wp_grow_a.o dump_wvec.o clear_wvec.o \
+	su2_antproj_w.o copy_wvec.o add_wvec.o sub_wvec.o s_m_wvec.o \
+	s_m_hwvec.o msq_wvec.o wvec_dot.o wvec_rdot.o \
+	s_m_a_wvec.o s_m_atm_wvec.o mb_gamma.o mb_gamma_l.o mb_gamma_r.o \
+	m_mat_wvec.o m_mat_hwvec.o m_amat_wvec.o m_amat_hwvec.o \
+	grow4wvecs.o wp_shrink4.o
+$(SU2OBJS) : complex.h su2.h
+$(WILSON_OBJS) : complex.h su2.h
+su2.a::	su2.h $(SU2OBJS)
+	ar rc su2.a $(SU2OBJS)
+	ranlib su2.a
+su2.a::	su2.h $(WILSON_OBJS)
+	ar rc su2.a $(WILSON_OBJS)
+	ranlib su2.a
+
+clean:
+	rm *.o
+

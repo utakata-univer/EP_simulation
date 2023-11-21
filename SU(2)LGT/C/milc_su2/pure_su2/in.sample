@@ -1,0 +1,18 @@
+prompt 0
+nx 2
+ny 2
+nz 2
+nt 2
+iseed 8352
+
+warms 100
+trajecs 100
+traj_between_meas 1
+beta 2.0
+steps_per_trajectory 1
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+

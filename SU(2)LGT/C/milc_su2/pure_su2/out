@@ -1,0 +1,273 @@
+Pure gauge SU2
+Overrelaxed/quasi-heat bath algorithm
+type 0 for no prompts, 1 for prompts or 2 for list of prompts
+lattice dimensions = 4 4 4 4
+random number seed = 8352
+LAYOUT = Hypercubes, options = EVENFIRST,
+
+
+warms = 50 trajecs = 100
+no. of traj. between prop. meas. = 1
+plaq. beta = 2.000000
+number of microcanonical steps per trajectory = 0
+number of qhb steps per trajectory = 1
+NOT fixing the gauge
+new lattice loaded
+Time for getting lattice = 1.666600e-02 seconds
+START 2.000000e+00 2.000000e+00
+monte: accept = 310, reject = 714
+monte: accept = 377, reject = 647
+monte: accept = 427, reject = 597
+monte: accept = 443, reject = 581
+monte: accept = 474, reject = 550
+monte: accept = 482, reject = 542
+monte: accept = 511, reject = 513
+monte: accept = 527, reject = 497
+monte: accept = 516, reject = 508
+monte: accept = 508, reject = 516
+monte: accept = 514, reject = 510
+monte: accept = 491, reject = 533
+monte: accept = 488, reject = 536
+monte: accept = 500, reject = 524
+monte: accept = 526, reject = 498
+monte: accept = 503, reject = 521
+monte: accept = 528, reject = 496
+monte: accept = 482, reject = 542
+monte: accept = 533, reject = 491
+monte: accept = 522, reject = 502
+monte: accept = 537, reject = 487
+monte: accept = 520, reject = 504
+monte: accept = 521, reject = 503
+monte: accept = 550, reject = 474
+monte: accept = 506, reject = 518
+monte: accept = 533, reject = 491
+monte: accept = 529, reject = 495
+monte: accept = 550, reject = 474
+monte: accept = 528, reject = 496
+monte: accept = 547, reject = 477
+monte: accept = 529, reject = 495
+monte: accept = 548, reject = 476
+monte: accept = 569, reject = 455
+monte: accept = 533, reject = 491
+monte: accept = 544, reject = 480
+monte: accept = 554, reject = 470
+monte: accept = 524, reject = 500
+monte: accept = 506, reject = 518
+monte: accept = 530, reject = 494
+monte: accept = 549, reject = 475
+monte: accept = 561, reject = 463
+monte: accept = 541, reject = 483
+monte: accept = 539, reject = 485
+monte: accept = 520, reject = 504
+monte: accept = 532, reject = 492
+monte: accept = 550, reject = 474
+monte: accept = 579, reject = 445
+monte: accept = 527, reject = 497
+monte: accept = 539, reject = 485
+monte: accept = 537, reject = 487
+THERMALIZATION COMPLETED
+monte: accept = 565, reject = 459
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.076916e+00 1.038523e+00
+monte: accept = 521, reject = 503
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.053092e+00 1.020297e+00
+monte: accept = 544, reject = 480
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.056284e+00 1.053938e+00
+monte: accept = 511, reject = 513
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.040547e+00 1.037216e+00
+monte: accept = 526, reject = 498
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.074392e+00 1.062884e+00
+monte: accept = 534, reject = 490
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.078313e+00 1.050000e+00
+monte: accept = 516, reject = 508
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.080523e+00 1.022293e+00
+monte: accept = 567, reject = 457
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.066873e+00 1.012952e+00
+monte: accept = 524, reject = 500
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.083131e+00 1.028658e+00
+monte: accept = 558, reject = 466
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.047111e+00 1.005184e+00
+monte: accept = 560, reject = 464
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.039224e+00 1.041962e+00
+monte: accept = 547, reject = 477
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.047144e+00 1.065017e+00
+monte: accept = 556, reject = 468
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.051984e+00 1.044718e+00
+monte: accept = 542, reject = 482
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.033080e+00 1.039834e+00
+monte: accept = 564, reject = 460
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.035963e+00 1.040815e+00
+monte: accept = 575, reject = 449
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.033024e+00 9.980488e-01
+monte: accept = 556, reject = 468
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.045126e+00 9.684088e-01
+monte: accept = 547, reject = 477
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.018253e+00 9.762890e-01
+monte: accept = 567, reject = 457
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.842632e-01 1.004622e+00
+monte: accept = 572, reject = 452
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.000256e+00 9.662868e-01
+monte: accept = 560, reject = 464
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.045901e+00 9.818336e-01
+monte: accept = 565, reject = 459
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.033094e+00 9.683773e-01
+monte: accept = 568, reject = 456
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.023226e+00 9.589608e-01
+monte: accept = 549, reject = 475
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.882587e-01 1.000642e+00
+monte: accept = 548, reject = 476
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.887676e-01 9.844418e-01
+monte: accept = 564, reject = 460
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.825003e-01 9.905277e-01
+monte: accept = 540, reject = 484
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.016411e+00 1.004636e+00
+monte: accept = 567, reject = 457
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.057067e+00 9.954214e-01
+monte: accept = 555, reject = 469
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.075598e+00 9.978607e-01
+monte: accept = 556, reject = 468
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.076699e+00 1.013859e+00
+monte: accept = 539, reject = 485
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.028232e+00 1.014826e+00
+monte: accept = 523, reject = 501
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.964865e-01 1.031108e+00
+monte: accept = 552, reject = 472
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.821382e-01 9.812550e-01
+monte: accept = 562, reject = 462
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.996921e-01 9.939277e-01
+monte: accept = 560, reject = 464
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.003859e+00 1.012072e+00
+monte: accept = 579, reject = 445
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.023399e+00 1.021628e+00
+monte: accept = 524, reject = 500
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.042958e+00 9.958990e-01
+monte: accept = 536, reject = 488
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.044344e+00 1.002795e+00
+monte: accept = 537, reject = 487
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.027509e+00 1.023171e+00
+monte: accept = 568, reject = 456
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.031463e+00 1.011636e+00
+monte: accept = 534, reject = 490
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.020649e+00 1.044556e+00
+monte: accept = 547, reject = 477
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.018432e+00 1.070833e+00
+monte: accept = 527, reject = 497
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.941393e-01 1.093266e+00
+monte: accept = 570, reject = 454
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.003748e+00 1.076772e+00
+monte: accept = 549, reject = 475
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.020658e+00 1.062870e+00
+monte: accept = 529, reject = 495
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.026161e+00 1.080732e+00
+monte: accept = 573, reject = 451
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.031731e+00 1.057090e+00
+monte: accept = 530, reject = 494
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.018978e+00 1.033212e+00
+monte: accept = 546, reject = 478
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.003753e+00 1.008863e+00
+monte: accept = 518, reject = 506
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.024389e+00 9.993129e-01
+monte: accept = 567, reject = 457
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.042456e+00 9.849927e-01
+monte: accept = 531, reject = 493
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.027312e+00 1.004350e+00
+monte: accept = 546, reject = 478
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.011899e+00 1.010447e+00
+monte: accept = 550, reject = 474
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.747673e-01 1.029306e+00
+monte: accept = 544, reject = 480
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.837633e-01 1.017031e+00
+monte: accept = 554, reject = 470
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.851602e-01 1.008794e+00
+monte: accept = 594, reject = 430
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.971397e-01 1.036334e+00
+monte: accept = 562, reject = 462
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.006342e+00 1.015396e+00
+monte: accept = 555, reject = 469
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.027034e+00 9.938570e-01
+monte: accept = 561, reject = 463
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.040085e+00 9.759300e-01
+monte: accept = 560, reject = 464
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.063739e+00 9.694235e-01
+monte: accept = 538, reject = 486
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.070782e+00 9.876167e-01
+monte: accept = 569, reject = 455
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.065546e+00 9.987655e-01
+monte: accept = 571, reject = 453
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.039662e+00 1.010534e+00
+monte: accept = 537, reject = 487
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.016535e+00 1.008892e+00
+monte: accept = 545, reject = 479
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.053266e+00 1.007026e+00
+monte: accept = 557, reject = 467
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.027254e+00 1.009768e+00
+monte: accept = 574, reject = 450
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.074248e+00 1.022487e+00
+monte: accept = 530, reject = 494
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.075789e+00 1.026578e+00
+monte: accept = 538, reject = 486
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.079661e+00 9.877171e-01
+monte: accept = 530, reject = 494
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.062545e+00 9.763756e-01
+monte: accept = 559, reject = 465
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.060623e+00 9.869875e-01
+monte: accept = 540, reject = 484
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.019324e+00 9.683914e-01
+monte: accept = 564, reject = 460
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.001107e+00 9.823058e-01
+monte: accept = 563, reject = 461
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.936230e-01 9.970323e-01
+monte: accept = 557, reject = 467
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.035239e+00 9.392009e-01
+monte: accept = 587, reject = 437
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.039809e+00 9.340322e-01
+monte: accept = 559, reject = 465
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.060634e+00 9.837968e-01
+monte: accept = 545, reject = 479
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.037747e+00 1.001408e+00
+monte: accept = 550, reject = 474
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.050385e+00 1.038405e+00
+monte: accept = 544, reject = 480
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.036540e+00 1.050285e+00
+monte: accept = 550, reject = 474
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.040851e+00 1.056779e+00
+monte: accept = 547, reject = 477
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.024750e+00 1.051595e+00
+monte: accept = 542, reject = 482
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.004105e+00 1.079443e+00
+monte: accept = 542, reject = 482
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.012782e+00 1.091201e+00
+monte: accept = 568, reject = 456
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.001320e+00 1.058730e+00
+monte: accept = 543, reject = 481
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.910542e-01 1.049060e+00
+monte: accept = 534, reject = 490
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.908800e-01 1.047747e+00
+monte: accept = 558, reject = 466
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.799345e-01 1.043586e+00
+monte: accept = 541, reject = 483
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.908527e-01 1.058358e+00
+monte: accept = 557, reject = 467
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.881292e-01 1.053734e+00
+monte: accept = 555, reject = 469
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.019264e+00 1.084920e+00
+monte: accept = 531, reject = 493
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.005369e+00 1.043967e+00
+monte: accept = 557, reject = 467
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.016445e+00 1.010049e+00
+monte: accept = 560, reject = 464
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.024319e+00 9.982108e-01
+monte: accept = 541, reject = 483
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.701209e-01 1.018959e+00
+monte: accept = 575, reject = 449
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.520089e-01 1.034462e+00
+monte: accept = 571, reject = 453
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 9.798908e-01 1.031312e+00
+monte: accept = 557, reject = 467
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.011929e+00 1.062848e+00
+monte: accept = 524, reject = 500
+GMES 9.990000e+01 9.990000e+01 9.990000e+01 1.003031e+00 1.074575e+00
+RUNNING COMPLETED
+Time = 2.721558e+01 seconds
+
+
+Termination: status = 0

@@ -1,0 +1,217 @@
+prompt 0
+nx 4
+ny 4
+nz 4
+nt 4
+iseed 7958117
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 0
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 0.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 1
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 1.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 2
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 2.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 3
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 3.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 4
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 4.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 5.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 6
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 6.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 7
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 7.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 8
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 8.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 9
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 9.5
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
+warms 50
+trajecs 500
+traj_between_meas 1
+beta 10
+steps_per_trajectory 0
+qhb_steps 1
+fresh
+no_gauge_fix
+forget
+
