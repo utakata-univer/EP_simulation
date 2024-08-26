@@ -1,2 +1,2 @@
 # EP_simulation
-This repositry is C code for Elementary particle simulation of graduation research.
+卒研の素粒子論-格子ゲージ-シミュレーション
